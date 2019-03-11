@@ -1,0 +1,103 @@
+body {
+  font-family: Courier, sans-serif;
+  background-color: #f3e6e6;
+  position: sticky;
+  min-width: 100px;
+}
+
+/* Container with all the text */
+
+div.container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+/* Left Panel  - Outline */
+
+div.leftPanel {
+  position: fixed;
+  left: 10px;
+  width: 230px;
+  padding: 20px;
+  border-style: dotted;
+  border-color: #4fcbfb;
+}
+
+/* Middle Panel - all text */
+
+div.middlePanel {
+  margin-left: 220px;
+  margin-right: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  border-style: dotted;
+  border-color: #4fcbfb;
+}
+
+/* Headings */
+
+h1 {
+  text-align: center;
+}
+
+h2.title {
+  margin-top: 50px;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+/* tables */
+
+table, th, td {
+  border: 3px solid #fdfd96;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 15px;
+}
+
+th {
+  background-color: #efe1e4;
+}
+
+
+/* reference image styles */
+
+img.img {
+  border-style: dashed;
+  border-color: #4fcbfb;
+}
+
+/* Outline sidePanel anchor links */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #b17dfd;
+}
+
+/* special rainbow effect for text */
+
+.rainbow {
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #fc3245), color-stop(0.15, #fc3245), color-stop(0.3, #fdb17d), color-stop(0.45, #fc3245), color-stop(0.6, #fec8e8),color-stop(0.75, #fc3245), color-stop(0.9, #c8e8fe), color-stop(1, #fc3245) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
