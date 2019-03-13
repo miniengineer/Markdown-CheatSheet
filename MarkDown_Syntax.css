@@ -1,6 +1,6 @@
 body {
   font-family: Courier, sans-serif;
-  background-color: #f3e6e6;
+  background-color: #efefef;
   position: sticky;
   min-width: 100px;
 }
@@ -19,7 +19,7 @@ div.leftPanel {
   left: 10px;
   width: 230px;
   padding: 20px;
-  border-style: dotted;
+  border-style: solid;
   border-color: #4fcbfb;
 }
 
@@ -30,7 +30,7 @@ div.middlePanel {
   margin-right: 10px;
   margin-top: 20px;
   padding: 20px;
-  border-style: dotted;
+  border-style: solid;
   border-color: #4fcbfb;
 }
 
@@ -52,7 +52,7 @@ h3 {
 /* tables */
 
 table, th, td {
-  border: 3px solid #fdfd96;
+  border: 3px dashed #8da3f9;
   text-align: center;
 }
 
@@ -72,8 +72,7 @@ th {
 /* reference image styles */
 
 img.img {
-  border-style: dashed;
-  border-color: #4fcbfb;
+  border: dashed #8da3f9;
 }
 
 /* Outline sidePanel anchor links */
@@ -92,6 +91,7 @@ a:hover {
   color: #b17dfd;
 }
 
+
 /* special rainbow effect for text */
 
 .rainbow {
@@ -100,4 +100,21 @@ a:hover {
   color:transparent;
   -webkit-background-clip: text;
   background-clip: text;
+}
+
+
+/* copy to clipboard button */
+
+.square_btn {
+    display: inline-block;
+    padding: 0.5em 1em;
+    color: #67c5ff;
+    border: solid 2px #67c5ff;
+    border-radius: 10px;
+    transition: .4s;
+}
+
+.square_btn:hover {
+    background: #67c5ff;
+    color: white;
 }

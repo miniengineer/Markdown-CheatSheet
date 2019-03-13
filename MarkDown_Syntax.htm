@@ -54,29 +54,28 @@
       <tr>
         <td># Heading level 1</td>
         <td> <h1>Heading level 1</h1> </td>
-
-        <!-- select tab with copy to clipboard button -->
-        <td> <select class="headings">
-          <option value="#yourtext">#</option>
-          <option value="##yourtext">##</option>
-          <option value="###yourtext">###</option>
-          <option value="####yourtext">####</option>
-        </select>
-          <button class="copyHeadings" type="button" name="button">Copy to clipboard</button> </td>
+        <!-- copy to clipboard button -->
+        <td><button data-snippet="#yourtext" class="snippet square_btn" type="button" name="button"><strong>COPY TO CLIPBOARD</strong></button></td>
       </tr>
 
       <tr>
         <td>## Heading level 2</td>
         <td> <h2>Heading Level 2</h2> </td>
+        <!-- copy to clipboard button -->
+        <td><button data-snippet="##yourtext" class="snippet square_btn" type="button" name="button"><strong>COPY TO CLIPBOARD</strong></button></td>
       </tr>
 
       <tr>
         <td>### Heading level 3</td>
         <td> <h3>Heading level 3</h3> </td>
+        <!-- copy to clipboard button -->
+        <td><button data-snippet="###yourtext" class="snippet square_btn" type="button" name="button"><strong>COPY TO CLIPBOARD</strong></button></td>
       </tr>
 
       <td>#### Heading level 4</td>
       <td> <h4>Heading level 4</h4> </td>
+      <!-- copy to clipboard button -->
+      <td><button data-snippet="####yourtext" class="snippet square_btn" type="button" name="button"><strong>COPY TO CLIPBOARD</strong></button></td>
      </table>
 
      <!-- table #2 bold-->
@@ -84,7 +83,7 @@
      <h2 class="title colorChange" id="bold">2. Bold・太字</h2></a>
      <p>To bold text, add two asterisks or underscores before and after a word or phrase. <br>
        To bold the middle of a word for emphasis, add two asterisks without spaces around the letters.</p>
-       <p>テキストを太字にしたい場合、テキストの前後ろに「**」や「__」追加してください。　<br>
+       <p>テキストを太字にしたい場合、テキストの前と後ろに「**」や「__」追加してください。　<br>
          言葉の真ん中の文字を太字にしたい場合、スペースをせず、文字の前後ろに「**」を追加してください（例：bea**uti**ful）。
        </p>
        <br>
@@ -98,34 +97,32 @@
        <tr>
          <td>I love **bold text**</td>
          <td>I love <strong>bold text</strong></td>
-
-         <!-- select tab with copy to clipboard button -->
-         <td>
-           <select class="boldText">
-             <option value="**yourtext**">**</option>
-             <option value="__yourtext__">__</option>
-           </select>
-           <button class="copyBoldText" type="button" name="button">Copy to clipboard</button>
-         </td>
+         <!-- copy to clipboard button -->
+         <td><button data-snippet="**yourtext**" class="snippet square_btn" type="button" name="button"><strong>COPY TO CLIPBOARD</strong></button></td>
        </tr>
 
        <tr>
          <td>I love __bold text__</td>
          <td> I love <strong>bold text</strong> </td>
+         <!-- copy to clipboard button -->
+         <td><button data-snippet="__yourtext__" class="snippet square_btn" type="button" name="button"><strong>COPY TO CLIPBOARD</strong></button></td>
        </tr>
 
        <tr>
-         <td>Love__is__bold</td>
+         <td>Love**is**bold</td>
          <td> Love<strong>is</strong>bold </td>
+         <!-- copy to clipboard button -->
+         <td><button data-snippet="you**rte**xt" class="snippet square_btn" type="button" name="button"><strong>COPY TO CLIPBOARD</strong></button></td>
        </tr>
-
-
       </table>
 
    <!-- table #3 italic -->
 
    <h2 class="title colorChange" id="italic">3. Italic・斜体</h2>
-
+<p>To italicize text, add one asterisk or underscore before and after a word or phrase. <br>
+  To italicize the middle of a word for emphasis, add one asterisk without spaces around the letters.</p>
+  <p>テキストを斜体にしたい場合、テキストの前と後ろにアスタリスクやアンダースコアを１つ追加してください。<br>
+    言葉の各文字を斜体にしたい場合、その文字の前と後ろにアスタリスクを１つ追加してください。</p>
    <br>
    <table>
      <tr>
@@ -136,35 +133,31 @@
 
      <tr>
        <td>I love *italic font*</td>
-       <td>
-         I love <i>italic font</i>
-       </td>
-
-       <!-- select tab with copy to clipboard button -->
-       <td>
-         <select class="italicText">
-           <option value="*yourtext*">*</option>
-           <option value="_yourtext_">_</option>
-         </select>
-         <button class="copyItalicText" type="button" name="button">Copy to clipboard</button>
-       </td>
+       <td>I love <i>italic font</i></td>
+       <!-- copy to clipboard button -->
+       <td><button data-snippet="*yourtext*" class="snippet square_btn" type="button" name="button"><strong>COPY TO CLIPBOARD</strong></button></td>
      </tr>
 
      <tr>
        <td>I love _italic font_</td>
        <td> I love <i>italic font</i> </td>
+       <!-- copy to clipboard button -->
+       <td><button data-snippet="_yourtext_" class="snippet square_btn" type="button" name="button"><strong>COPY TO CLIPBOARD</strong></button></td>
      </tr>
 
      <tr>
        <td>Ilove*italicfont*</td>
        <td> Ilove<i>italicfont</i> </td>
+       <!-- copy to clipboard button -->
+       <td><button data-snippet="y*our*text" class="snippet square_btn" type="button" name="button"><strong>COPY TO CLIPBOARD</strong></button></td>
      </tr>
     </table>
 
     <!-- table #4 bold&italic -->
 
     <h2 class="title colorChange" id="boldItalic">4. Bold & Italic・太字と斜体</h2>
-
+    <p>To emphasize text with bold and italics at the same time, add three asterisks or underscores before and after a word or phrase.</p>
+    <p>テキストを太字と斜体にしたい場合、テキストの前と後ろにアスタリスやアンダースコアを３つを追加してください。</p>
     <table>
       <tr>
         <th>Markdown</th>
@@ -175,31 +168,29 @@
       <tr>
         <td>This text is ***really important***</td>
         <td><strong> <i>This text is really important</i></strong></td>
-
-        <!-- select tab with copy to clipboard button -->
-        <td>
-          <select class="boldItalicText">
-            <option value="***yourtext***">***</option>
-            <option value="___yourtext___">___</option>
-            <option value="__*yourtext*__">__*</option>
-            <option value="**_yourtext_**">**_</option>
-          </select>
-          <button class="copyBoldItalicText" type="button" name="button">Copy to clipboard</button>
-        </td>
+        <!-- copy to clipboard button -->
+        <td><button data-snippet="***yourtext***" class="snippet square_btn" type="button" name="button"><strong>COPY TO CLIPBOARD</strong></button></td>
       </tr>
 
       <tr>
         <td>This text is ___really important___</td>
         <td> <strong> <i>This text is really important</i></strong> </td>
+        <!-- copy to clipboard button -->
+        <td><button data-snippet="___yourtext___" class="snippet square_btn" type="button" name="button"><strong>COPY TO CLIPBOARD</strong></button></td>
       </tr>
 
       <tr>
         <td>This text is __*really important*__</td>
         <td> <strong> <i>This text is really important</i></strong> </td>
+        <!-- copy to clipboard button -->
+        <td><button data-snippet="__*yourtext*__" class="snippet square_btn" type="button" name="button"><strong>COPY TO CLIPBOARD</strong></button></td>
       </tr>
+
       <tr>
         <td>This text is **_really important_**</td>
         <td> <strong> <i>This text is really important</i></strong> </td>
+        <!-- copy to clipboard button -->
+        <td><button data-snippet="**_yourtext_**" class="snippet square_btn" type="button" name="button"><strong>COPY TO CLIPBOARD</strong></button></td>
       </tr>
      </table>
 
@@ -207,12 +198,12 @@
 
   <h2 class="title colorChange" id="blockquotes">5. Blockquotes・引用タグ</h2>
 
-<p>
-  To create a blockquote add a <strong><</strong> in front of a paragraph.
-</p>
-<p>
-ブロッククォートを作成ために、テキストの前に<strong> < </strong>を追加してください。
-</p>
+<p>To create a blockquote add a <strong><</strong> in front of a paragraph.</p>
+<p>ブロッククォートを作成ために、テキストの前に<strong> < </strong>を追加してください。</p>
+
+<!--button to copy blockquotes tag to clipboard -->
+<p><button data-snippet="<yourtext" class="snippet square_btn" type="button" name="button"><strong>COPY TO CLIPBOARD</strong></button></p>
+<br>
 <p>Example:</p>
 <br>
 <img class="img" src="Images/blockquote_en.png" alt="blockquote en example" />
@@ -222,9 +213,6 @@
 <img class="img" src="Images/blockquote_jp.png" alt="blockquote jp example">
 <br>
 
-<!--button to copy blockquotes tag to clipboard -->
-<p><button data-snippet="<yourtext" class="snippet" type="button" name="button">Copy to clipboard</button></p>
-
    <!--part #6 Ordered Lists -->
 
   <h2 class="title colorChange" id="orderedLists">6. Ordered Lists・順序付きリスト</h2>
@@ -232,7 +220,7 @@
   The numbers don’t have to be in numerical order, but the list should start with the number one.</p>
   <p>順序付きリストを作成したい場合、行ごとに番号が付いているテキストを入力してください。<br>
     最初の行のテキストに必ず「１」番号を追加してください。その後の番号が後件ではなくても、順序付きリストとして表示されます。</p>
-
+<br>
   <table>
     <tr>
       <th>Markdown</th>
@@ -257,9 +245,9 @@
         </ol>
       </td>
 
-     <!--button to copy orderedLists tag to clipboard -->
       <td>
-    <button data-snippet="1. yourtext &#10;  1. yourtext &#10;  1. yourtext" class="snippet" type="button" name="button">Copy to clipboard</button>
+    <!--button to copy orderedLists tag to clipboard -->
+    <button data-snippet="1. yourtext &#10;  2. yourtext &#10;  3. yourtext" class="snippet square_btn" type="button" name="button"><strong>COPY TO CLIPBOARD</strong></button>
     </td>
 
       <tr>
@@ -278,6 +266,11 @@
             <li>Forth item</li>
           </ol>
         </td>
+
+        <td>
+      <!--button to copy orderedLists tag to clipboard -->
+      <button data-snippet="1. yourtext &#10;  1. yourtext &#10;  1. yourtext" class="snippet square_btn" type="button" name="button"><strong>COPY TO CLIPBOARD</strong></button>
+      </td>
       </tr>
 
       <tr>
@@ -296,6 +289,11 @@
             <li>Forth item</li>
           </ol>
         </td>
+
+        <td>
+      <!--button to copy orderedLists tag to clipboard -->
+      <button data-snippet="1. yourtext &#10;  8. yourtext &#10;  3. yourtext" class="snippet square_btn" type="button" name="button"><strong>COPY TO CLIPBOARD</strong></button>
+      </td>
       </tr>
   </table>
 

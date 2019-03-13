@@ -1,4 +1,4 @@
-// all copyToClipboard buttons
+// CopyToClipboard button
 
 function copyToClipboard (str) {
   const el = document.createElement('textarea');
@@ -9,35 +9,11 @@ function copyToClipboard (str) {
   document.body.removeChild(el);
 };
 
-$("button.copyHeadings").click(function() {
-  copyToClipboard($(".headings").val());
-});
-
-$("button.copyBoldText").click(function() {
-  copyToClipboard($(".boldText").val());
-});
-
-$("button.copyItalicText").click(function() {
-  copyToClipboard($(".italicText").val());
-});
-
-$("button.copyBoldItalicText").click(function() {
-  copyToClipboard($(".boldItalicText").val());
-});
-
-$("button.copyQuotes").click(function() {
-  copyToClipboard(">yourtext");
-});
-
-$("button.copyOrderedLists").click(function() {
-  copyToClipboard("1. yourtext" + "\n" + "1. yourtext" + "\n" + "1. yourtext");
-});
-
 $("button.snippet").click(function() {
   copyToClipboard($(this).data("snippet"));
 });
 
-//Add rainbow class when hovering over to make text colorful
+//Add rainbow class when hovering over
 
 $(".colorChange").hover(function(){
   $(this).addClass("rainbow");
