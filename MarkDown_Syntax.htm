@@ -2,7 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Markdown cheat sheet</title>
+    <title>Markdown cheatsheet</title>
+    <meta name="description" content="Markdown cheatsheet EN/JP">
     <link rel="stylesheet" href="MarkDown_Syntax.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" charset="utf-8"></script>
   </head>
@@ -20,6 +21,7 @@
         <li> <a href="#boldItalic">Bold & Italic・ボールドとイタリック</a> </li>
         <li> <a href="#blockquotes">Blockquotes・引用タグ</a> </li>
         <li> <a href="#orderedLists">Ordered Lists・順序付きリスト</a> </li>
+        <li> <a href="#unorderedList">Unordered List・番号なしリスト</a> </li>
       </ol>
     </div>  <!-- div class = "leftPanel" -->
 
@@ -247,7 +249,7 @@
 
       <td>
     <!--button to copy orderedLists tag to clipboard -->
-    <button data-snippet="1. yourtext &#10;  2. yourtext &#10;  3. yourtext" class="snippet square_btn" type="button" name="button"><strong>COPY TO CLIPBOARD</strong></button>
+    <button data-snippet="1. yourtext &#10;2. yourtext &#10;3. yourtext&#10;" class="snippet square_btn" type="button" name="button"><strong>COPY TO CLIPBOARD</strong></button>
     </td>
 
       <tr>
@@ -269,7 +271,7 @@
 
         <td>
       <!--button to copy orderedLists tag to clipboard -->
-      <button data-snippet="1. yourtext &#10;  1. yourtext &#10;  1. yourtext" class="snippet square_btn" type="button" name="button"><strong>COPY TO CLIPBOARD</strong></button>
+      <button data-snippet="1. yourtext &#10;1. yourtext &#10;1. yourtext&#10;" class="snippet square_btn" type="button" name="button"><strong>COPY TO CLIPBOARD</strong></button>
       </td>
       </tr>
 
@@ -292,9 +294,124 @@
 
         <td>
       <!--button to copy orderedLists tag to clipboard -->
-      <button data-snippet="1. yourtext &#10;  8. yourtext &#10;  3. yourtext" class="snippet square_btn" type="button" name="button"><strong>COPY TO CLIPBOARD</strong></button>
+      <button data-snippet="1. yourtext &#10;8. yourtext &#10;3. yourtext&#10;" class="snippet square_btn" type="button" name="button"><strong>COPY TO CLIPBOARD</strong></button>
       </td>
       </tr>
+  </table>
+
+    <!--part #7 Unordered Lists -->
+
+  <h2 class="title colorChange" id="unorderedList">7. Unordered List・番号なしリスト</h2>
+  <p>To create an unordered list, add dashes (-), asterisks (*), or plus signs (+) in front of line items. <br>
+    Indent one or more items to create a nested list.</p>
+  <p>番号なしリストを作成したい場合、テキストの前に「-」や　「*」や　「+」を追加してください。<br>
+  テキストを字下げすると、親と小項目になります。</p>
+
+  <table>
+    <tr>
+      <th>Markdown</th>
+      <th>Rendered output</th>
+      <th>Try it!</th>
+    </tr>
+
+    <tr>
+      <td>
+        - First item <br>
+        - Second item <br>
+        - Third item <br>
+        - Forth item <br>
+      </td>
+
+      <td>
+      <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+        <li>Forth item</li>
+      </ul>
+      </td>
+
+      <td>
+        <!--button to copy orderedLists tag to clipboard -->
+        <button data-snippet="- yourtext &#10;- yourtext &#10;- yourtext &#10;" class="snippet square_btn" type="button" name="button"><strong>COPY TO CLIPBOARD</strong></button>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        * First item <br>
+        * Second item <br>
+        * Third item <br>
+        * Forth item <br>
+      </td>
+
+      <td>
+        <ul>
+          <li>First item</li>
+          <li>Second item</li>
+          <li>Third item</li>
+          <li>Forth item</li>
+        </ul>
+      </td>
+
+      <td>
+        <!--button to copy orderedLists tag to clipboard -->
+        <button data-snippet="* yourtext &#10;* yourtext &#10;* yourtext &#10;" class="snippet square_btn" type="button" name="button"><strong>COPY TO CLIPBOARD</strong></button>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        + First item <br>
+        * Second item <br>
+        - Third item <br>
+        + Forth item <br>
+      </td>
+
+      <td>
+        <ul>
+          <li>First item</li>
+          <li>Second item</li>
+          <li>Third item</li>
+          <li>Forth item</li>
+        </ul>
+      </td>
+
+      <td>
+        <!--button to copy orderedLists tag to clipboard -->
+        <button data-snippet="+ yourtext &#10;* yourtext &#10;- yourtext &#10;" class="snippet square_btn" type="button" name="button"><strong>COPY TO CLIPBOARD</strong></button>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        - First item <br>
+        - Second item <br>
+        - Third item <br>
+  <span style="padding-left:30px;">- Indented item</span><br>
+  <span style="padding-left:30px;">- Indented item</span><br>
+        - Forth item <br>
+      </td>
+
+      <td>
+        <ul>
+          <li>First item</li>
+          <li>Second item</li>
+          <li>Third item</li>
+          <ul>
+            <li>Indented item</li>
+            <li>Indented item</li>
+          </ul>
+          <li>Forth item</li>
+        </ul>
+      </td>
+
+      <td>
+        <!--button to copy orderedLists tag to clipboard -->
+        <button data-snippet="- yourtext &#10;- yourtext &#10;  - yourtext &#10;  - yourtext &#10;- yourtext &#10;" class="snippet square_btn" type="button" name="button"><strong>COPY TO CLIPBOARD</strong></button>
+      </td>
+    </tr>
+
   </table>
 
 
