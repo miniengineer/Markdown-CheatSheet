@@ -1,6 +1,7 @@
 # Markdown-CheatSheet
 
 At some point in the current company, it was decided we need to rewrite our product documentation.
+
 Make it more global and straightforward.
 
 We needed to learn markdown as we were asked to write new documentation in this markup language. 
